@@ -65,7 +65,7 @@
             aria-current="page"
             ><img
               src="./assets/inkaz-logo.png"
-              alt="InKAZ logo"
+              alt="INKAZ logo"
               width="1774"
               height="887"
               class="brand-logo"
@@ -404,11 +404,11 @@
               </li>
             </ul>
             <a
-              href="https://wa.me/96179123991?text=Hello%20INKAZ%2C%20I'd%20like%20to%20book%20a%20Kachef."
+              href="https://wa.me/96179123991?text=Hello%20INKAZ%2C%20I%20would%20like%20to%20book%20a%20consultation%20about%20your%20emergency%20preparedness%20services."
               target="_blank"
               rel="noopener noreferrer"
               class="mt-8 inline-flex rounded-xl bg-danger px-6 py-3.5 font-semibold text-danger-foreground transition-all hover:bg-danger/90"
-              >Book a Consultation</a
+              >Book a consultation</a
             >
           </div>
         </section>
@@ -443,27 +443,17 @@
                   designated personnel, ensuring they are confident and prepared
                   to use the equipment effectively when an emergency occurs.
                 </p>
-                <div class="mt-8 grid gap-4 sm:grid-cols-3">
-                  <div class="rounded-xl bg-surface p-4 ring-1 ring-border">
-                    <p class="font-mono text-xs text-muted">Lifetime</p>
-                    <p
-                      class="mt-1 font-display text-2xl font-bold text-foreground"
-                    >
-                      2yr
-                    </p>
-                    <p class="text-xs text-muted">warranty</p>
+                <div class="equipment-services mt-8">
+                  <div
+                    class="equipment-service rounded-xl bg-surface p-4 ring-1 ring-border"
+                  >
+                    <h3>Equipment care and maintenance</h3>
                   </div>
-                  <div class="rounded-xl bg-surface p-4 ring-1 ring-border">
-                    <p class="font-mono text-xs text-muted">Maintenance</p>
-                    <p class="text-xs text-muted">
-                      Equipment care and maintenance
-                    </p>
-                  </div>
-                  <div class="rounded-xl bg-surface p-4 ring-1 ring-border">
-                    <p class="font-mono text-xs text-muted">Support</p>
-                    <p class="text-xs text-muted">
-                      Arabic, English &amp; French
-                    </p>
+                  <div
+                    class="equipment-service rounded-xl bg-surface p-4 ring-1 ring-border"
+                  >
+                    <h3>Support</h3>
+                    <p>Arabic, English &amp; French</p>
                   </div>
                 </div>
               </div>
@@ -558,17 +548,27 @@
                     id="callback-name"
                     aria-label="Full name"
                     autocomplete="name"
-                  /><select
+                  />
+                  <label class="enquiry-label" for="callback-setting"
+                    >Who is this enquiry for?</label
+                  >
+                  <select
                     required=""
                     class="w-full rounded-lg bg-white/5 px-4 py-3 text-sm text-white/70 outline-none ring-1 ring-white/15 focus:ring-danger/60"
                     id="callback-setting"
-                    aria-label="Select your setting"
-                    autocomplete="organization"
+                    aria-label="Who is this enquiry for?"
                   >
-                    <option value="">Select your setting</option>
-                    <option>School / organisation</option>
-                    <option>Workplace</option>
-                    <option>Home &amp; family</option></select
+                    <option value="">Please select</option>
+                    <option>Individual</option>
+                    <option>Family or household</option>
+                    <option>Business or workplace</option>
+                    <option>School or educational institution</option>
+                    <option>Healthcare facility</option>
+                    <option>Hotel, restaurant or hospitality business</option>
+                    <option>Sports or fitness facility</option>
+                    <option>NGO or community organization</option>
+                    <option>Residential building or property management</option>
+                    <option>Other</option></select
                   ><input
                     type="email"
                     placeholder="Email"
@@ -617,7 +617,7 @@
               <div class="flex items-center gap-2.5">
                 <img
                   src="./assets/inkaz-logo.png"
-                  alt="InKAZ logo"
+                  alt="INKAZ logo"
                   width="1774"
                   height="887"
                   loading="lazy"

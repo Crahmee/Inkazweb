@@ -43,7 +43,7 @@ callbackForm.addEventListener("submit", (event) => {
   if (!callbackForm.reportValidity()) return;
   const setting = document.querySelector("#callback-setting").value;
   const email = document.querySelector("#callback-email").value.trim();
-  const message = `Hello InKAZ, I'd like to request a callback.\nName: ${name.value.trim()}\nSetting: ${setting}\nEmail: ${email}`;
+  const message = `Hello INKAZ, I'd like to request a callback.\nName: ${name.value.trim()}\nWho is this enquiry for?\n${setting}\nEmail: ${email}`;
   document.querySelector("#callback-message").value = message;
   const url = `https://wa.me/96179123991?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank", "noopener,noreferrer");

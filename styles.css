@@ -533,7 +533,7 @@
   }
   ::selection {
     color: #fff;
-    background: #fe421f59;
+    background: #ca151e59;
   }
 }
 @layer components;
@@ -1951,7 +1951,7 @@
       var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .glow-red {
-    box-shadow: 0 0 40px -10px #fe421f73;
+    box-shadow: 0 0 40px -10px #ca151e73;
   }
   .ring-border {
     --tw-ring-color: var(--border);
@@ -2152,7 +2152,7 @@
     --cell-size: 2rem;
   }
   .text-glow-red {
-    text-shadow: 0 0 24px #fe421f8c;
+    text-shadow: 0 0 24px #ca151e8c;
   }
   .group-focus-within\/menu-item\:opacity-100:is(
     :where(.group\/menu-item):focus-within *
@@ -2168,7 +2168,7 @@
       opacity: 1;
     }
     .group-hover\:text-glow-red:is(:where(.group):hover *) {
-      text-shadow: 0 0 24px #fe421f8c;
+      text-shadow: 0 0 24px #ca151e8c;
     }
     .group-hover\/menu-item\:opacity-100:is(:where(.group\/menu-item):hover *) {
       opacity: 1;
@@ -2531,7 +2531,7 @@
         var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
     .hover\:glow-red:hover {
-      box-shadow: 0 0 40px -10px #fe421f73;
+      box-shadow: 0 0 40px -10px #ca151e73;
     }
     .hover\:ring-danger\/40:hover {
       --tw-ring-color: var(--danger);
@@ -3451,22 +3451,22 @@
   --foreground: #fff;
   --surface: #05325e;
   --muted: #fff;
-  --primary: #fe421f;
+  --primary: #ca151e;
   --primary-foreground: #fff;
-  --danger: #fe421f;
+  --danger: #ca151e;
   --danger-foreground: #fff;
-  --cyan: #fe421f;
+  --cyan: #ca151e;
   --border: #ffffff73;
 }
 @keyframes pulse-glow {
   0%,
   to {
     opacity: 1;
-    box-shadow: 0 0 #fe421f73;
+    box-shadow: 0 0 #ca151e73;
   }
   50% {
     opacity: 0.85;
-    box-shadow: 0 0 18px 4px #fe421f40;
+    box-shadow: 0 0 18px 4px #ca151e40;
   }
 }
 @keyframes scan {
@@ -3517,8 +3517,8 @@ main > section {
 }
 .hero-emphasis {
   text-underline-offset: 7px;
-  -webkit-text-decoration: underline #fe421f;
-  text-decoration: underline #fe421f;
+  -webkit-text-decoration: underline #ca151e;
+  text-decoration: underline #ca151e;
   text-decoration-thickness: 4px;
 }
 .bg-danger {
@@ -3534,7 +3534,7 @@ main > section {
 }
 .text-danger:not(.bg-danger),
 .text-cyan:not(.bg-danger) {
-  text-decoration-color: #fe421f;
+  text-decoration-color: #ca151e;
 }
 .section-light a.text-danger {
   text-underline-offset: 4px;
@@ -4015,7 +4015,7 @@ header {
 }
 .primary-navigation a:hover {
   text-decoration: underline;
-  text-decoration-color: #fe421f;
+  text-decoration-color: #ca151e;
   text-underline-offset: 6px;
 }
 .menu-toggle {
@@ -4204,7 +4204,7 @@ main li {
   margin-top: 8px;
   padding: 12px 24px;
   border-radius: 10px;
-  background: #fe421f;
+  background: #ca151e;
   color: #ffffff;
   font-size: 19px;
   font-weight: 700;
@@ -4410,5 +4410,37 @@ html.course-modal-open {
 @media (max-width: 479px) {
   .certificate-links {
     flex: 1 1 180px;
+  }
+}
+
+/* Equipment services share the available space without fixed heights. */
+.equipment-services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 16px;
+}
+.equipment-service h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.equipment-service p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.enquiry-label {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+}
+#callback-setting {
+  min-width: 0;
+  max-width: 100%;
+}
+@media (max-width: 639px) {
+  .equipment-services {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
